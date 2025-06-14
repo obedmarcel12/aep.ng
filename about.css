@@ -418,8 +418,6 @@ footer {
 /* MOBILE-VIEW */
 
 @media (max-width: 500px) {
- 
-
   html {
     scroll-behavior: smooth;
   }
@@ -462,7 +460,7 @@ footer {
   }
 
   #first-navbar a {
-    font-size: 1.8vh !important;
+    font-size: 0.8vh !important;
   }
 
   #first-navbar i {
