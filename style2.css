@@ -341,7 +341,6 @@ footer {
 @media (max-width: 500px) {
   html {
     scroll-behavior: smooth;
-    overflow: hidden;
   }
 
   .nav-links {
@@ -356,7 +355,6 @@ footer {
     text-align: center;
     gap: 10px !important;
     width: 100%;
-    overflow: hidden !important;
     padding: 10px 15px;
   }
 
@@ -565,7 +563,7 @@ footer {
   }
 
   .primary-mobile small {
-    font-size: 9px;
+    font-size: 12px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
       sans-serif;
   }
