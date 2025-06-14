@@ -381,7 +381,7 @@ footer {
   }
 
   #first-navbar a {
-    font-size: 0.8vh !important;
+    font-size: 1.4vh !important;
   }
 
   #first-navbar i {
@@ -408,9 +408,9 @@ footer {
     padding: 1vh 2vw;
   }
 
-  /* #second-navbar button  {
-    margin-left: 20rem;
-  } */
+  #second-navbar button {
+    margin-left: 15rem;
+  }
 
   #second-navbar img {
     display: none;
@@ -558,12 +558,12 @@ footer {
   }
 
   .primary-mobile h1 {
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 600;
   }
 
   .primary-mobile small {
-    font-size: small;
+    font-size: smaller;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
       sans-serif;
   }
