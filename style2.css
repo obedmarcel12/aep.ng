@@ -558,12 +558,12 @@ footer {
   }
 
   .primary-mobile h1 {
-    font-size: 1rem;
+    font-size: 0.6rem;
     font-weight: 600;
   }
 
   .primary-mobile small {
-    font-size: smaller;
+    font-size: x-small;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
       sans-serif;
   }
