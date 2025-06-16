@@ -1,0 +1,10 @@
+*.zip
+*.mp4
+*.mov
+*.avi
+*.psd
+*.rar
+*.7z
+*.exe
+node_modules/
+.DS_Store

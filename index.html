@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon" href="bootstrap5/IMAGES/security.png" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style2.css" />
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body id="top">
+    <!-- FIRST NAVBAR (Blue) -->
+    <nav class="nav-one" id="first-navbar">
+      <div class="">
+        <a
+          class="hidden-a"
+          class="text-decoration-none text-white-50"
+          style="font-size: 3vh; font-family: serif"
+          href="#"
+          >Have any questions?</a
+        >
+      </div>
+
+      <div class="div-one">
+        <span class="hover-span" style="font-family: serif">
+          <i class="bi bi-telephone-fill text-white-50"></i>
+          <a class="hover text-primary" href="#">+234 704 111 0333</a>
+        </span>
+      </div>
+      <!--  -->
+      <div class="email-info">
+        <span
+          class="hover-span d-flex align-items-center gap-2"
+          style="font-size: 3vh; font-family: serif"
+        >
+          <i class="bi bi-envelope text-white-50"></i>
+          <a class="hover text-primary" href="#">info@aep.ng</a>
+        </span>
+      </div>
+    </nav>
+
+    <style>
+      a {
+        text-decoration: none !important;
+      }
+
+      .accordion-button {
+        background-color: #f0f8ff;
+        color: #001f3f;
+        font-weight: 500;
+        border-bottom: 1px solid #007bff;
+        transition: background 0.3s ease;
+      }
+
+      .accordion-button:not(.collapsed) {
+        background-color: #007bff;
+        color: white;
+      }
+
+      .accordion-button:hover {
+        background-color: #cce5ff;
+      }
+
+      .accordion-body {
+        background: rgb(2, 107, 226) !important;
+        border: 1px solid rgb(194, 238, 241) !important;
+      }
+
+      .accordion-body a {
+        color: #ffff;
+        font-weight: 500;
+      }
+
+      .accordion-body a:hover {
+        text-decoration: underline;
+      }
+
+      @media (min-width: 768px) {
+        #mobileMenu {
+          display: none !important;
+        }
+      }
+    </style>
+
+    <!-- SECOND NAVBAR -->
+    <nav
+      id="second-navbar"
+      class="d-flex justify-content-between align-items-center px-3 py-2 shadow"
+    >
+      <!-- Logo -->
+      <a href="index.html">
+        <img
+          src="src/AEP-Logo-Main-Main-1-scaled.jpg"
+          style="inline-size: 200px"
+          alt="Logo"
+        />
+      </a>
+
+      <!-- Menu Icon (Mobile only) -->
+      <button
+        class="btn d-md-none"
+        type="button"
+        aria-controls="mobileMenu"
+        aria-expanded="false"
+        id="menuToggle"
+      >
+        <i class="bi bi-list" style="font-size: 2rem"></i>
+      </button>
+
+      <!-- Desktop Nav Items -->
+      <ul class="d-none d-md-flex align-items-center m-0 p-0 gap-4">
+        <li class="list-unstyled">
+          <a class="text-secondary" href="index.html">Home</a>
+        </li>
+
+        <li class="dropdown list-unstyled position-relative">
+          <!-- Main About Us link -->
+          <a class="text-secondary" href="about.html">About Us</a>
+
+          <!-- Separate dropdown toggle -->
+          <a
+            class="text-secondary dropdown-toggle-split"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            style="
+              position: absolute;
+              right: 0;
+              top: 0;
+              height: 100%;
+              padding: 0 10px;
+            "
+          >
+            <span class="visually-hidden">Toggle Dropdown</span>
+          </a>
+
+          <!-- Dropdown menu -->
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="board-directors.html">
+                Board Of Directors
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="dropdown list-unstyled position-relative">
+          <!-- Main link to Services page -->
+          <a class="text-secondary" href="services.html">Our Services</a>
+
+          <!-- Separate dropdown toggle -->
+          <a
+            class="text-secondary dropdown-toggle-split"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            style="
+              position: absolute;
+              right: 0;
+              top: 0;
+              height: 100%;
+              padding: 0 10px;
+            "
+          >
+            <span class="visually-hidden">Toggle Dropdown</span>
+          </a>
+
+          <!-- Dropdown menu -->
+          <ul class="dropdown-menu">
+            <li class="border-info border-bottom border-1">
+              <a class="dropdown-item" href="./services/oil-and-gas.html"
+                >Oil and Gas</a
+              >
+            </li>
+            <li class="border-info border-bottom border-1">
+              <a class="dropdown-item" href="./services/power.html">Power</a>
+            </li>
+            <li class="border-info border-bottom border-1">
+              <a class="dropdown-item" href="./services/oil-field-asset.html"
+                >Oil Field Asset Financing</a
+              >
+            </li>
+            <li class="border-info border-bottom border-1">
+              <a class="dropdown-item" href="./services/man-power.html"
+                >Man Power & Training</a
+              >
+            </li>
+            <li class="border-info border-bottom border-1">
+              <a class="dropdown-item" href="./services/procurement.html"
+                >Engineering Procurement</a
+              >
+            </li>
+            <li class="border-info border-bottom border-1">
+              <a class="dropdown-item" href="./services/drilling.html"
+                >Drilling</a
+              >
+            </li>
+            <li class="border-info border-bottom border-1">
+              <a class="dropdown-item" href="./services/pipeline.html"
+                >Pipeline Construction</a
+              >
+            </li>
+          </ul>
+        </li>
+
+        <li class="list-unstyled">
+          <a class="text-secondary" href="collabpartners.html"
+            >Collaborating Partners</a
+          >
+        </li>
+        <li class="list-unstyled">
+          <a class="text-secondary" href="career.html">Careers</a>
+        </li>
+        <li class="list-unstyled">
+          <a class="text-secondary" href="contact.html">Contact Us</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Mobile Accordion Menu -->
+    <div class="d-md-none collapse px-3 mt-2" id="mobileMenu">
+      <div class="accordion" id="navAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <a href="index.html" class="accordion-button collapsed">Home</a>
+          </h2>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#aboutCollapse"
+            >
+              Discover Us
+            </button>
+          </h2>
+          <div
+            id="aboutCollapse"
+            class="accordion-collapse collapse"
+            data-bs-parent="#navAccordion"
+          >
+            <div class="accordion-body">
+              <a href="about.html" class="d-block mb-1">About Us</a>
+            </div>
+            <div class="accordion-body">
+              <a href="board-directors.html" class="d-block mb-1"
+                >Board Of Directors</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#servicesCollapse"
+            >
+              Work With Us
+            </button>
+          </h2>
+          <div
+            id="servicesCollapse"
+            class="accordion-collapse collapse"
+            data-bs-parent="#navAccordion"
+          >
+            <div class="accordion-body">
+              <a href="services.html" class="d-block mb-1">Services</a>
+            </div>
+
+            <div class="accordion-body">
+              <a href="./services/oil-and-gas.html" class="d-block mb-3"
+                >Oil and Gas</a
+              >
+              <a href="./services/power.html" class="d-block mb-3">Power</a>
+              <a href="./services/oil-field-asset.html" class="d-block mb-3"
+                >Oil Field Asset Financing</a
+              >
+              <a href="./services/man-power.html" class="d-block mb-3"
+                >Man Power & Training</a
+              >
+              <a href="./services/procurement.html" class="d-block mb-3"
+                >Engineering Procurement</a
+              >
+              <a href="./services/drilling.html" class="d-block mb-3"
+                >Drilling</a
+              >
+              <a href="./services/pipeline.html" class="d-block mb-3"
+                >Pipeline Construction</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <a href="collabpartners.html" class="accordion-button collapsed"
+              >Collaborating Partners</a
+            >
+          </h2>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <a href="career.html" class="accordion-button collapsed">Careers</a>
+          </h2>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <a href="contact.html" class="accordion-button collapsed"
+              >Contact Us</a
+            >
+          </h2>
+        </div>
+      </div>
+    </div>
+
+    <!-- JS TO TOGGLE MENU -->
+    <script>
+      const menuBtn = document.getElementById('menuToggle')
+      const mobileMenu = document.getElementById('mobileMenu')
+
+      menuBtn.addEventListener('click', function () {
+        const isShown = mobileMenu.classList.contains('show')
+        const bsCollapse = bootstrap.Collapse.getOrCreateInstance(mobileMenu)
+
+        if (isShown) {
+          bsCollapse.hide()
+        } else {
+          bsCollapse.show()
+        }
+      })
+    </script>
+
+    <!-- END OF SECOND NAV -->
+
+    <section
+      id="carouselExample"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="src/oil-rig1.jpg" alt="Mama" />
+          <div class="carousel-caption text-white">
+            <div
+              class="carousel-div animate__animated animate__fadeInDown animate"
+            >
+              <h1>
+                WELCOME TO <br />
+                ADVANCED ENERGY PARTNERS <br />
+              </h1>
+              <span> AN INDIGENEOUS ENGINEERING SERVICES PROVIDER </span>
+            </div>
+            <a
+              href="#"
+              class="btn rounded-0 animate__animated animate__fadeInDown animate"
+              style="background: rgb(192, 20, 20); color: white"
+              >ABOUT US</a
+            >
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="src/oil-rig5.jpg" alt="Tech" />
+
+          <div class="carousel-caption text-white">
+            <h2 class="animate__animated animate__fadeInDown animate">
+              PROVIDING EFFICIENT TECHNOLOGICAL <br />
+              SOLUTIONS TO ENERGY CHALLENGES
+            </h2>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="src/oil-rig3.jpg" alt="Me" />
+          <div class="carousel-caption text-white">
+            <h2 class="animate__animated animate__fadeInDown animate">
+              LEADING OIL SERVICE PROVIDER <br />DRIVING INNOVATION
+            </h2>
+            <a
+              href="#"
+              class="btn rounded-0 animate__animated animate__fadeInDown animate"
+              style="
+                background: rgb(192, 20, 20);
+                color: white;
+                font-weight: 600;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode',
+                  'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+              "
+              >About Us</a
+            >
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="src/oil-rig4a.webp" alt="Tech" />
+          <div class="carousel-caption">
+            <h1 class="h1-pro animate__animated animate__fadeInDown animate">
+              PROCUREMENT OF ESSENTIAL <br />
+              POWER AND ELECTRICAL ASSETS
+            </h1>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        const carousel = document.getElementById('yourCarouselId')
+
+        carousel.addEventListener('slide.bs.carousel', function (e) {
+          const animatedElems =
+            e.relatedTarget.querySelectorAll('.animate__animated')
+          animatedElems.forEach((elem) => {
+            elem.classList.remove('animate__animated') // Reset animation
+            void elem.offsetWidth // Trigger reflow
+            elem.classList.add('animate__animated')
+          })
+        })
+      </script>
+
+      <!-- Optional controls -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="prev"
+      >
+        <span class="prev-icon">
+          <i class="carousel-control-prev-icon"></i>
+        </span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="next"
+      >
+        <span class="next-icon">
+          <i class="carousel-control-next-icon"></i>
+        </span>
+      </button>
+    </section>
+
+    <!--  -->
+
+    <section
+      class="d-flex align-items-center gap-5 section-aep animate__animated animate__fadeInDown animate"
+    >
+      <div class="AEP-div">
+        <span><img src="src/AEP-1.png" alt="" /></span>
+      </div>
+      <!--  -->
+      <div class="primary-mobile d-flex flex-column gap-3">
+        <h1>
+          At AEP, our primary <br />
+          focus is on Oil, Gas,<br />
+          Power and <br />
+          Financing.
+        </h1>
+        <small
+          >We are an indigenous Oil and Gas servicing company using <br />
+          technological solutions to solve energy promblems. <br />
+          <br />
+          We are a leading oil and gas firm driving innovation in the <br />
+          sector. We have a great track record of completed projects.</small
+        >
+        <button
+          class="btn btn-outline-dark border-2 border border-primary"
+          style="width: 9vw; height: 8vh"
+        >
+          <a class="text-decoration-none text-primary" href="about.html"
+            >Read more</a
+          >
+        </button>
+      </div>
+    </section>
+
+    <!--  -->
+
+    <section
+      class="Core-Services-Aep animate__animated animate__fadeInDown animate"
+    >
+      <section
+        class="mobile-cont container px-4 py-4 border border-2 border-white d-flex justify-content-center align-items-center flex-column gap-5"
+      >
+        <h1 class="text-center text-white display-6 fw-normal">
+          Our Core Services
+        </h1>
+        <div class="mobile-d d-flex gap-4">
+          <a href="./services/oil-and-gas.html" class="Oil-Ready-span">
+            <img src="src/Oil-Ready.jpg" alt="" />
+            <p>Oil and Gas</p>
+          </a>
+          <a href="./services/power.html" class="Oil-Ready-span">
+            <img src="src/Power-Ready.jpg" alt="" />
+            <p>Power</p>
+          </a>
+          <a href="./services/man-power.html" class="Oil-Ready-span">
+            <img src="src/4.-Man-Power.jpg" alt="" />
+            <p>
+              Man Power <br />
+              & Training
+            </p>
+          </a>
+          <a href="./services/oil-field-asset.html" class="Oil-Ready-span">
+            <img src="src/money-Ready3.jpg" alt="" />
+            <p>
+              Oil Asset <br />
+              Financing
+            </p>
+          </a>
+        </div>
+        <!--  -->
+        <div class="mobile-d d-flex gap-4">
+          <a href="./services/procurement.html" class="Oil-Ready-spanB">
+            <img src="src/5.-Engineering-construction-main.jpg" alt="" />
+            <p>
+              Engineering <br />
+              Procurement <br />
+              Construction
+            </p>
+          </a>
+          <a href="./services/drilling.html" class="Oil-Ready-spanB">
+            <img src="src/6.-Drilling-main.jpg" alt="" />
+            <p>Drilling</p>
+          </a>
+          <a href="./services/pipeline.html" class="Oil-Ready-spanB">
+            <img src="src/7.-Pipeline-construction-main.jpg" alt="" />
+            <p>
+              Pipeline <br />
+              Construction <br />
+              and Supply
+            </p>
+          </a>
+        </div>
+      </section>
+    </section>
+
+    <!--  -->
+
+    <section
+      class="Collaborating-partners-Sec animate__animated animate__fadeInDown animate"
+    >
+      <section
+        class="mobile-c container d-flex align-items-center justify-content-center flex-column gap-5"
+      >
+        <span
+          class="text-center display-6 fw-normal"
+          data-aos="fade-left"
+          data-aos-delay="300"
+        >
+          <h1>Our Collaborating Partners</h1>
+        </span>
+        <!--  -->
+        <div class="premium-div d-flex align-items-center gap-4">
+          <a href="collabpartners.html"><img src="src/4.-Belbadi.png" /></a>
+          <a href="collabpartners.html"><img src="src/2.-Pics.png" alt="" /></a>
+          <a href="collabpartners.html"
+            ><img src="src/1.Horizon.png" alt=""
+          /></a>
+          <a href="collabpartners.html"
+            ><img src="src/3.Westford.png" alt=""
+          /></a>
+          <a href="collabpartners.html"><img src="src/5.-Alsa.png" alt="" /></a>
+        </div>
+      </section>
+    </section>
+
+    <!--  -->
+
+    <footer>
+      <section class="mobile-footer container d-flex gap-5">
+        <div class="">
+          <span class="footer-span">
+            <img src="src/AEPicon2.jpg" alt="" />
+            <strong
+              >Advanced Energy <br />
+              Partners is an <br />
+              indigenous Oil & Gas, <br />
+              power and financing <br />
+              company. <br />
+            </strong>
+            <!--  -->
+            <small>
+              AEP works with clients to <br />
+              achieve their short term <br />
+              goals keeping a focus on <br />
+              the long term plan <br />
+              delivering premium <br />
+              solutions ensuring that our <br />
+              clients operational <br />
+              satisfaction is not just met <br />
+              but exceeded.</small
+            >
+          </span>
+        </div>
+        <!--  -->
+        <div>
+          <span class="footer-span">
+            <strong>Our mission</strong>
+            <small
+              >To provide premium quality <br />
+              services to all clients using <br />
+              the most advanced and <br />
+              efficient technology based <br />
+              solutions.</small
+            >
+          </span>
+        </div>
+        <!--  -->
+        <div>
+          <span class="footer-span">
+            <strong> Our Vision </strong>
+            <!--  -->
+            <small
+              >To provide superior <br />
+              professional oil and gas <br />
+              services that deliver the <br />
+              best value-addition in the <br />
+              industry.</small
+            >
+          </span>
+        </div>
+        <!--  -->
+        <div>
+          <span class="footer-span">
+            <strong>Our Services</strong>
+            <ul>
+              <li><a href="./services/oil-and-gas.html">Oil and Gas</a></li>
+              <li><a href="./services/power.html">Power</a></li>
+              <li>
+                <a href="./services/man-power.html">Man Power & Training</a>
+              </li>
+              <li>
+                <a href="./services/oil-field-asset.html">Asset Financing</a>
+              </li>
+              <li>
+                <a href="./services/procurement.html"
+                  >Engineering Procurement Construction</a
+                >
+              </li>
+              <li><a href="./services/drilling.html">Drilling</a></li>
+              <li>
+                <a href="./services/pipeline.html"
+                  >Pipeline Construction and Supply</a
+                >
+              </li>
+            </ul>
+          </span>
+        </div>
+        <!--  -->
+
+        <div>
+          <span class="footer-span">
+            <strong>Contact Us</strong>
+            <div>
+              <i class="bi bi-telephone-fill icon-red"></i>
+              <small>+234 704 111 0333</small>
+            </div>
+            <!--  -->
+            <div>
+              <i class="bi bi-geo-alt-fill icon-red"></i>
+              <small>
+                <small
+                  >No.19, Kema Chikwe <br />
+                  Street, Guzape. FCT - Abuja</small
+                ></small
+              >
+            </div>
+            <!--  -->
+            <div>
+              <i class="bi-envelope icon-red"></i>
+              <small>info@aep.ng</small>
+            </div>
+          </span>
+        </div>
+      </section>
+
+      <!--  -->
+
+      <section class="footer-SeCAEP_DOWN">
+        <div>
+          <a href="#top">
+            <i class="bi bi-chevron-up"></i>
+          </a>
+          <!--  -->
+          <small> © 2025 Advanced Energy Partners. All Rights Reserved.</small>
+        </div>
+      </section>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000, // animation duration in ms
+        once: true, // animation happens only once when you scroll down
+      })
+    </script>
+
+    <script src="script.js"></script>
+    <script>
+      const menuButton = document.getElementById('menuToggleBtn')
+      const collapseDiv = document.getElementById('collapseNavItems')
+
+      menuButton.addEventListener('click', function () {
+        collapseDiv.classList.toggle('d-none')
+      })
+    </script>
+  </body>
+</html>
