@@ -744,7 +744,6 @@ footer {
     /* flex-direction: column; */
     /* padding-left: 40px; */
   }
-
   .footer-span {
     display: flex;
     flex-direction: column;
@@ -771,17 +770,22 @@ footer {
     padding: 0;
     display: flex;
     flex-direction: column;
-    gap: 1vh;
+    gap: 1vh !important;
     font-size: 0.5rem;
   }
 
   .footer-span li a {
     text-decoration: none;
+    font-size: 0.6rem;
+
     color: white;
   }
 
   .footer-span li {
+    display: flex !important;
+    flex-direction: column !important;
     list-style-type: square;
+    gap: 1vh !important;
     color: red;
   }
 
@@ -1170,6 +1174,65 @@ footer {
     /* border-radius: 10px; */
   }
 
+  .OIL_GAS-SEC_ section {
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+
+    gap: 10vh !important;
+  }
+
+  .OIL_GAS_div {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 8vh;
+  }
+
+  .OIL_GAS_div img {
+    width: 85vw;
+    height: 75vh;
+  }
+
+  .OIL_GAS_div ul {
+    margin: 0;
+    padding: 0;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: start !important;
+    width: 100%;
+    gap: 4vh;
+  }
+
+  .OIL_GAS_div ul span div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1vh;
+  }
+
+  .OIL_GAS_div ul span {
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+  }
+
+  .OIL_GAS_div ul small {
+    font-size: 14px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+      'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+  }
+
+  .OIL_GAS_div ul span div li {
+    list-style: lower-alpha;
+    margin-left: 20px;
+    font-size: 14px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+      'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+  }
+
   footer {
     width: 100%;
     height: auto !important;
@@ -1274,7 +1337,7 @@ footer {
 
 /* MOBILE-VIEW */
 
-@media (max-width: 500px) {
+@media (max-width: 640px) {
   html {
     scroll-behavior: smooth;
   }
@@ -1319,7 +1382,6 @@ footer {
   #first-navbar a {
     font-size: 1.4vh !important;
   }
-
 
   #first-navbar i {
     font-size: 0.7rem;
@@ -1495,8 +1557,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: radial-gradient(rgba(0, 0, 0, 0.4)),
-      url(../src/man-powe3.jpg);
+    background: radial-gradient(rgba(0, 0, 0, 0.4)), url(../src/man-powe3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

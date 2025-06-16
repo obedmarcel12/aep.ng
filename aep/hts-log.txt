@@ -1,0 +1,97 @@
+HTTrack3.49-2+htsswf+htsjava launched on Thu, 05 Jun 2025 08:45:19 at www.aep.ng +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qiC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" www.aep.ng -O1 "C:\My Web Sites\aep" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+08:45:22	Warning: 	Note: due to www.aep.ng remote robots.txt rules, links beginning with these path will be forbidden: /wp-admin/ (see in the options to disable this)
+08:47:34	Warning: 	Retry after error -4 (Connect Error) at link localhost:8080/aep/wp-content/uploads/2016/08/home_lawyer2_sectionbg2.png (from www.aep.ng/)
+08:47:35	Warning: 	Retry after error -4 (Connect Error) at link localhost:8080/aep/wp-content/uploads/2016/08/home_lawyer2_headingbg.png (from www.aep.ng/)
+08:47:35	Warning: 	Moved Permanently for www.aep.ng/engineering-construction/
+08:47:35	Warning: 	File has moved from www.aep.ng/engineering-construction/ to http://www.aep.ng/portfolio-item/engineering-construction/
+08:47:36	Warning: 	File not parsed, looks like binary: www.aep.ng/wp-content/plugins/revslider/public/assets/css/openhand.cur
+08:47:36	Warning: 	File not parsed, looks like binary: www.aep.ng/wp-content/plugins/revslider/public/assets/css/closedhand.cur
+08:47:42	Warning: 	Moved Permanently for www.aep.ng/?p=188
+08:47:42	Warning: 	File has moved from www.aep.ng/?p=188 to http://www.aep.ng/about-us/
+08:47:44	Warning: 	Moved Permanently for www.aep.ng/?p=234
+08:47:44	Warning: 	File has moved from www.aep.ng/?p=234 to http://www.aep.ng/our-team/
+08:48:56	Warning: 	Moved Permanently for www.aep.ng/?p=147
+08:48:56	Warning: 	File has moved from www.aep.ng/?p=147 to http://www.aep.ng/our-services/
+08:49:18	Warning: 	Moved Permanently for www.aep.ng/?p=149
+08:49:18	Warning: 	File has moved from www.aep.ng/?p=149 to http://www.aep.ng/oil-and-gas/
+08:49:20	Warning: 	Retry after error -4 (Connect Error) at link localhost:8080/aep/wp-content/uploads/2016/08/home_lawyer2_headingbg2.png (from www.aep.ng/oil-and-gas/)
+08:49:20	Warning: 	Moved Permanently for www.aep.ng/?p=152
+08:49:20	Warning: 	File has moved from www.aep.ng/?p=152 to http://www.aep.ng/power/
+08:49:22	Warning: 	Moved Permanently for www.aep.ng/?p=155
+08:49:22	Warning: 	File has moved from www.aep.ng/?p=155 to http://www.aep.ng/asset-financing/
+08:49:22	Warning: 	Moved Permanently for www.aep.ng/?p=173
+08:49:22	Warning: 	File has moved from www.aep.ng/?p=173 to http://www.aep.ng/man-power-training/
+08:49:24	Warning: 	Moved Permanently for www.aep.ng/?p=175
+08:49:24	Warning: 	File has moved from www.aep.ng/?p=175 to http://www.aep.ng/engineering-construction-procurement/
+08:49:25	Warning: 	Moved Permanently for www.aep.ng/?p=177
+08:49:25	Warning: 	File has moved from www.aep.ng/?p=177 to http://www.aep.ng/drilling/
+08:49:26	Warning: 	Moved Permanently for www.aep.ng/?p=179
+08:49:26	Warning: 	File has moved from www.aep.ng/?p=179 to http://www.aep.ng/pipeline-construction-supply/
+08:49:27	Warning: 	Moved Permanently for www.aep.ng/?p=213
+08:49:27	Warning: 	File has moved from www.aep.ng/?p=213 to http://www.aep.ng/partners/
+08:49:28	Warning: 	Moved Permanently for www.aep.ng/?p=198
+08:49:28	Warning: 	File has moved from www.aep.ng/?p=198 to http://www.aep.ng/careers/
+08:49:30	Warning: 	Moved Permanently for www.aep.ng/?p=18
+08:49:30	Warning: 	File has moved from www.aep.ng/?p=18 to http://www.aep.ng/contact-us/
+08:49:30	Warning: 	Retry after error -4 (Connect Error) at link localhost:8080/aep/wp-content/uploads/2016/08/home_lawyer2_sectionbg2.png (from www.aep.ng/)
+08:49:30	Warning: 	Retry after error -4 (Connect Error) at link localhost:8080/aep/wp-content/uploads/2016/08/home_lawyer2_headingbg.png (from www.aep.ng/)
+08:49:34	Warning: 	Moved Permanently for www.aep.ng/?p=258
+08:49:34	Warning: 	File has moved from www.aep.ng/?p=258 to http://www.aep.ng/king-alfred-p-diete-spiff/
+08:49:38	Warning: 	Moved Permanently for www.aep.ng/?p=260
+08:49:38	Warning: 	File has moved from www.aep.ng/?p=260 to http://www.aep.ng/gen-ali-nani/
+08:49:39	Warning: 	Moved Permanently for www.aep.ng/?p=263
+08:49:39	Warning: 	File has moved from www.aep.ng/?p=263 to http://www.aep.ng/h-e-ahmad-saeed-al-badi/
+08:50:04	Warning: 	Moved Permanently for www.aep.ng/?p=289
+08:50:04	Warning: 	File has moved from www.aep.ng/?p=289 to http://www.aep.ng/eng-hassan-allam/
+08:50:12	Warning: 	Moved Permanently for www.aep.ng/?p=265
+08:50:12	Warning: 	File has moved from www.aep.ng/?p=265 to http://www.aep.ng/abiye-henderson-membere/
+08:50:13	Warning: 	Moved Permanently for www.aep.ng/?p=267
+08:50:13	Warning: 	File has moved from www.aep.ng/?p=267 to http://www.aep.ng/david-pernas/
+08:50:14	Warning: 	Moved Permanently for www.aep.ng/?p=269
+08:50:14	Warning: 	File has moved from www.aep.ng/?p=269 to http://www.aep.ng/mr-shakiru-olayinka/
+08:50:15	Warning: 	Moved Permanently for www.aep.ng/?p=272
+08:50:15	Warning: 	File has moved from www.aep.ng/?p=272 to http://www.aep.ng/engr-akaakar-benjamin/
+08:50:16	Warning: 	Moved Permanently for www.aep.ng/?p=274
+08:50:16	Warning: 	File has moved from www.aep.ng/?p=274 to http://www.aep.ng/farida-ahmed/
+08:50:16	Warning: 	Moved Permanently for www.aep.ng/?p=276
+08:50:16	Warning: 	File has moved from www.aep.ng/?p=276 to http://www.aep.ng/kehinde-olona/
+08:50:16	Warning: 	Moved Permanently for www.aep.ng/?p=181
+08:50:16	Warning: 	File has moved from www.aep.ng/?p=181 to http://www.aep.ng/procurement-services/
+08:50:16	Warning: 	Retry after error -4 (Connect Error) at link localhost:8080/aep/wp-content/uploads/2016/08/home_lawyer2_headingbg2.png (from www.aep.ng/oil-and-gas/)
+08:50:17	Error: 	"Connect Error" (-4) after 2 retries at link localhost:8080/aep/wp-content/uploads/2016/08/home_lawyer2_sectionbg2.png (from www.aep.ng/)
+08:50:17	Error: 	"Connect Error" (-4) after 2 retries at link localhost:8080/aep/wp-content/uploads/2016/08/home_lawyer2_headingbg.png (from www.aep.ng/)
+08:50:17	Error: 	"Not Found" (404) at link www.aep.ng/portfolio-item/engineering-construction/feed/ (from www.aep.ng/portfolio-item/engineering-construction/)
+08:50:50	Warning: 	Moved Permanently for www.aep.ng/?p=141
+08:50:50	Warning: 	File has moved from www.aep.ng/?p=141 to http://www.aep.ng/portfolio-item/engineering-construction/
+08:50:54	Error: 	"Connect Error" (-4) after 2 retries at link localhost:8080/aep/wp-content/uploads/2016/08/home_lawyer2_headingbg2.png (from www.aep.ng/oil-and-gas/)
+08:50:55	Error: 	"Not Found" (404) at link www.aep.ng/portfolio-item/man-power-training/feed/ (from www.aep.ng/portfolio-item/man-power-training/)
+08:50:59	Warning: 	Moved Permanently for www.aep.ng/?p=140
+08:50:59	Warning: 	File has moved from www.aep.ng/?p=140 to http://www.aep.ng/portfolio-item/man-power-training/
+08:51:03	Error: 	"Not Found" (404) at link www.aep.ng/portfolio-item/drilling/feed/ (from www.aep.ng/portfolio-item/drilling/)
+08:51:04	Warning: 	Moved Permanently for www.aep.ng/?p=144
+08:51:04	Warning: 	File has moved from www.aep.ng/?p=144 to http://www.aep.ng/portfolio-item/drilling/
+08:51:08	Error: 	"Not Found" (404) at link www.aep.ng/portfolio-item/procurement-services/feed/ (from www.aep.ng/portfolio-item/procurement-services/)
+08:51:11	Warning: 	Moved Permanently for www.aep.ng/?p=146
+08:51:11	Warning: 	File has moved from www.aep.ng/?p=146 to http://www.aep.ng/portfolio-item/procurement-services/
+08:51:23	Error: 	"Not Found" (404) at link www.aep.ng/portfolio-item/pipeline-construction-and-supply/feed/ (from www.aep.ng/portfolio-item/pipeline-construction-and-supply/)
+08:51:23	Warning: 	Moved Permanently for www.aep.ng/?p=145
+08:51:23	Warning: 	File has moved from www.aep.ng/?p=145 to http://www.aep.ng/portfolio-item/pipeline-construction-and-supply/
+08:51:26	Error: 	"Not Found" (404) at link www.aep.ng/portfolio-item/asset-financing/feed/ (from www.aep.ng/portfolio-item/asset-financing/)
+08:51:29	Warning: 	Moved Permanently for www.aep.ng/?p=139
+08:51:29	Warning: 	File has moved from www.aep.ng/?p=139 to http://www.aep.ng/portfolio-item/asset-financing/
+08:51:34	Error: 	"Not Found" (404) at link www.aep.ng/portfolio-item/power/feed/ (from www.aep.ng/portfolio-item/power/)
+08:51:40	Warning: 	Moved Permanently for www.aep.ng/?p=138
+08:51:40	Warning: 	File has moved from www.aep.ng/?p=138 to http://www.aep.ng/portfolio-item/power/
+08:51:44	Error: 	"Not Found" (404) at link www.aep.ng/portfolio-item/oil-gas/feed/ (from www.aep.ng/portfolio-item/oil-gas/)
+08:51:44	Warning: 	Moved Permanently for www.aep.ng/?p=137
+08:51:44	Warning: 	File has moved from www.aep.ng/?p=137 to http://www.aep.ng/portfolio-item/oil-gas/
+
+HTTrack Website Copier/3.49-2 mirror complete in 6 minutes 26 seconds : 330 links scanned, 279 files written (50316359 bytes overall), 102 files updated [3808570 bytes received at 9866 bytes/sec], 4.6 requests per connection
+(11 errors, 75 warnings, 0 messages)

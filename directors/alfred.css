@@ -745,6 +745,65 @@ footer {
     /* padding-left: 40px; */
   }
 
+  .OIL_GAS-SEC_ section {
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+
+    gap: 10vh !important;
+  }
+
+  .OIL_GAS_div {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 8vh;
+  }
+
+  .OIL_GAS_div img {
+    width: 85vw;
+    height: 75vh;
+  }
+
+  .OIL_GAS_div ul {
+    margin: 0;
+    padding: 0;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: start !important;
+    width: 100%;
+    gap: 4vh;
+  }
+
+  .OIL_GAS_div ul span div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1vh;
+  }
+
+  .OIL_GAS_div ul span {
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+  }
+
+  .OIL_GAS_div ul small {
+    font-size: 14px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+      'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+  }
+
+  .OIL_GAS_div ul span div li {
+    list-style: lower-alpha;
+    margin-left: 20px;
+    font-size: 14px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+      'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+  }
+
   .footer-span {
     display: flex;
     flex-direction: column;
@@ -1188,22 +1247,21 @@ footer {
     display: flex;
     flex-direction: column;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    gap: 2.5vh;
+    gap: 1vh;
     color: white;
   }
 
   .footer-span img {
-    width: 15vw;
-    height: 15vh;
+    inline-size: 65px;
   }
 
   .footer-span strong {
-    font-size: 2.5vh;
+    font-size: 0.5rem;
     font-weight: 500;
   }
 
   .footer-span small {
-    font-size: 2vh;
+    font-size: 0.5rem;
   }
 
   .footer-span ul {
@@ -1211,17 +1269,22 @@ footer {
     padding: 0;
     display: flex;
     flex-direction: column;
-    gap: 1vh;
-    font-size: 2vh;
+    gap: 1vh !important;
+    font-size: 0.5rem;
   }
 
   .footer-span li a {
     text-decoration: none;
+    font-size: 0.5rem;
+
     color: white;
   }
 
   .footer-span li {
+    display: flex !important;
+    flex-direction: column !important;
     list-style-type: square;
+    gap: 1vh !important;
     color: red;
   }
 
@@ -1274,7 +1337,7 @@ footer {
 
 /* MOBILE-VIEW */
 
-@media (max-width: 500px) {
+@media (max-width: 640px) {
   html {
     scroll-behavior: smooth;
   }

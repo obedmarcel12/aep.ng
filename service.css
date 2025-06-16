@@ -640,6 +640,17 @@ footer {
     gap: 5vh;
   }
 
+  .serv-div {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+  }
+
+  .serv-div img {
+    width: 75vw !important;
+    height: 80vh !important;
+  }
+
   .Oil-Ready-span {
     display: flex;
     align-items: center;
@@ -1260,7 +1271,7 @@ footer {
 
 /* MOBILE-VIEW */
 
-@media (max-width: 500px) {
+@media (max-width: 640px) {
   html {
     scroll-behavior: smooth;
   }

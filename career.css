@@ -1035,6 +1035,43 @@ footer {
     height: 2vw;
   }
 
+  .container-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20vh;
+  }
+
+  .CAreer-Div {
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+  }
+
+  .CAreer-Div img {
+    width: 80vw;
+    height: 65vh;
+  }
+
+  .CAreer-Div ul {
+    display: flex;
+    color: white;
+    flex-direction: column;
+    gap: 3vh;
+    padding: 0;
+    margin: 0;
+  }
+
+  .CAreer-Div ul strong {
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .CAreer-Div ul small {
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
   /* SECTIONS */
 
   .section-aep {
@@ -1271,7 +1308,7 @@ footer {
 
 /* MOBILE-VIEW */
 
-@media (max-width: 500px) {
+@media (max-width: 640px) {
   html {
     scroll-behavior: smooth;
   }

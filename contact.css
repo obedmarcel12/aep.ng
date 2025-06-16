@@ -511,6 +511,15 @@ footer {
     padding: 10px 15px;
   }
 
+  .accordion-body {
+    background: #1e7dfa !important;
+    border: 1px solid rgb(194, 238, 241) !important;
+  }
+
+  .accordion-body small {
+    color: white !important;
+  }
+
   .accordion-item {
     text-align: start;
     background: navy;
@@ -954,6 +963,16 @@ footer {
     padding: 10px 15px;
   }
 
+  .accordion-body {
+    background: #1e7dfa !important;
+    border: 1px solid rgb(194, 238, 241) !important;
+  }
+
+  .accordion-body a {
+    font-weight: 500;
+    color: white !important;
+  }
+
   .accordion-item {
     text-align: start;
     background: navy;
@@ -1374,7 +1393,7 @@ footer {
 
 /* MOBILE-VIEW */
 
-@media (max-width: 500px) {
+@media (max-width: 640px) {
   html {
     scroll-behavior: smooth;
   }
@@ -1384,7 +1403,7 @@ footer {
   }
 
   .accordion-body {
-    background: white !important;
+    background: #1e7dfa !important;
     border: 1px solid rgb(194, 238, 241) !important;
   }
 
@@ -1428,7 +1447,6 @@ footer {
   #first-navbar a {
     font-size: 1.4vh !important;
   }
-
 
   #first-navbar i {
     font-size: 0.7rem;
