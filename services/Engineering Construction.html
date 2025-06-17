@@ -86,7 +86,7 @@
         width: 100%;
         max-width: 400px;
         max-height: 300px;
-        object-fit: cover;
+        object-fit: contain;
         border-radius: 10px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         margin-left: 15px;
@@ -460,7 +460,8 @@
             class="carousel-caption w-100 d-block d-md-block text-center text-md-center d-flex align-items-center justify-content-center"
           >
             <h2 style="font-size: 2.5rem; text-shadow: 2px 2px 5px black">
-              Engineering Construction <br> Procurement
+              Engineering Construction <br />
+              Procurement
             </h2>
           </div>
         </div>
@@ -614,8 +615,8 @@
         <img
           id="tweetImage"
           src="../src/5.-Engineering-construction-main.jpg"
-          class="img-fluid rounded shadow"
-          style="max-height: 200px; width: 100%; object-fit: cover"
+          class="img-fluid  shadow"
+          style="max-height: 300px; width: 100%; object-fit: cover"
           alt="Tweet Image"
         />
       </div>
@@ -630,202 +631,199 @@
       })
     </script>
     >
-    <!-- ✅ RELATED POSTS CAROUSEL (Responsive) -->
+    <!-- ✅ RELATED POSTS CAROUSEL -->
     <section
-      style="
-        width: 100%;
-        height: auto;
-        background: radial-gradient(blue, black);
-      "
+      style="width: 100%; background: radial-gradient(blue, black)"
       class="related-posts py-5 text-center"
     >
       <h2 class="mb-4 text-white">Related posts</h2>
-      <div id="relatedCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner container">
-          <!-- First Slide -->
-          <div class="carousel-item active">
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-              <div class="col">
-                <div class="card bg-dark text-white border-0">
-                  <img
-                    src="../src/8.-Procurement-main.jpg"
-                    class="img-fluid rounded"
-                    style="height: 280px; object-fit: cover"
-                    alt="Procurement Services"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">
-                      Procurement Services
-                      <small class="text-muted d-block">March 9, 2020</small>
-                    </h5>
-                    <a href="../services/procurement.html">
-                      <button class="btn btn-outline-primary mt-2">
-                        Read more
-                      </button>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col">
-                <div class="card bg-dark text-white border-0">
-                  <img
-                    src="../src/7.-Pipeline-construction-main.jpg"
-                    class="img-fluid rounded"
-                    style="height: 280px; object-fit: cover"
-                    alt="Pipeline Construction"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">
-                      Pipeline Construction and Supply
-                      <small class="text-muted d-block">March 9, 2020</small>
-                    </h5>
-                    <a href="../services/pipeline.html">
-                      <button class="btn btn-outline-primary mt-2">
-                        Read more
-                      </button>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col">
-                <div class="card bg-dark text-white border-0">
-                  <img
-                    src="../src/6.-Drilling-main.jpg"
-                    class="img-fluid rounded"
-                    style="height: 280px; object-fit: cover"
-                    alt="Drilling"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">
-                      Drilling
-                      <small class="text-muted d-block">March 9, 2020</small>
-                    </h5>
-                    <a href="../services/drilling.html">
-                      <button class="btn btn-outline-primary mt-2">
-                        Read more
-                      </button>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
+      <div
+        class="container overflow-auto"
+        style="scroll-snap-type: x mandatory; white-space: nowrap"
+      >
+        <div class="d-flex" style="gap: 1rem">
+          <!-- Related Post Card 1 -->
+          <div
+            class="bg-dark text-white p-3 rounded shadow"
+            style="min-width: 280px; scroll-snap-align: start"
+          >
+            <img
+              src="../src/8.-Procurement-main.jpg"
+              class="img-fluid mb-2 rounded"
+              style="
+                height: 200px;
+                object-fit: cover;
+                border: 4px solid #12a8e3;
+              "
+              alt="Procurement Services"
+            />
+            <h5>
+              Procurement Services <br />
+              <small class="text-muted">- March 9, 2020</small>
+            </h5>
+            <a href="../services/procurement.html">
+              <button class="btn btn-outline-primary mt-2 btn-sm">
+                Read more
+              </button>
+            </a>
           </div>
 
-          <!-- Second Slide -->
-          <div class="carousel-item">
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-              <div class="col">
-                <div class="card bg-dark text-white border-0">
-                  <img
-                    src="../src/oil & gas img.jpg"
-                    class="img-fluid rounded"
-                    style="height: 280px; object-fit: cover"
-                    alt="Oil and Gas"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">
-                      Oil and Gas
-                      <small class="text-muted d-block">March 9, 2020</small>
-                    </h5>
-                    <a href="../services/oil-and-gas.html">
-                      <button class="btn btn-outline-primary mt-2">
-                        Read more
-                      </button>
-                    </a>
-                  </div>
-                </div>
-              </div>
+          <!-- Related Post Card 2 -->
+          <div
+            class="bg-dark text-white p-3 rounded shadow"
+            style="min-width: 280px; scroll-snap-align: start"
+          >
+            <img
+              src="../src/7.-Pipeline-construction-main.jpg"
+              class="img-fluid mb-2 rounded"
+              style="
+                height: 200px;
+                object-fit: cover;
+                border: 4px solid #12a8e3;
+              "
+              alt="Pipeline Construction"
+            />
+            <h5>
+              Pipeline Construction <br />
+              <small class="text-muted">- March 9, 2020</small>
+            </h5>
+            <a href="../services/pipeline.html">
+              <button class="btn btn-outline-primary mt-2 btn-sm">
+                Read more
+              </button>
+            </a>
+          </div>
 
-              <div class="col">
-                <div class="card bg-dark text-white border-0">
-                  <img
-                    src="../src/finacing-asset.webp"
-                    class="img-fluid rounded"
-                    style="height: 280px; object-fit: cover"
-                    alt="OIL FIELD ASSET FINANCING"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">
-                      OIL FIELD ASSET FINANCING
-                      <small class="text-muted d-block">March 9, 2020</small>
-                    </h5>
-                    <a href="../services/oil-field-asset.html">
-                      <button class="btn btn-outline-primary mt-2">
-                        Read more
-                      </button>
-                    </a>
-                  </div>
-                </div>
-              </div>
+          <!-- Related Post Card 3 -->
+          <div
+            class="bg-dark text-white p-3 rounded shadow"
+            style="min-width: 280px; scroll-snap-align: start"
+          >
+            <img
+              src="../src/6.-Drilling-main.jpg"
+              class="img-fluid mb-2 rounded"
+              style="
+                height: 200px;
+                object-fit: cover;
+                border: 4px solid #12a8e3;
+              "
+              alt="Drilling"
+            />
+            <h5>
+              Drilling <br />
+              <small class="text-muted">- March 9, 2020</small>
+            </h5>
+            <a href="../services/drilling.html">
+              <button class="btn btn-outline-primary mt-2 btn-sm">
+                Read more
+              </button>
+            </a>
+          </div>
 
-              <div class="col">
-                <div class="card bg-dark text-white border-0">
-                  <img
-                    src="../src/man-powe3.jpg"
-                    class="img-fluid rounded"
-                    style="height: 280px; object-fit: cover"
-                    alt="MAN POWER"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">
-                      MAN POWER & TRAINING
-                      <small class="text-muted d-block">March 9, 2020</small>
-                    </h5>
-                    <a href="../services/man-power.html">
-                      <button class="btn btn-outline-primary mt-2">
-                        Read more
-                      </button>
-                    </a>
-                  </div>
-                </div>
-              </div>
+          <!-- Related Post Card 4 -->
+          <div
+            class="bg-dark text-white p-3 rounded shadow"
+            style="min-width: 280px; scroll-snap-align: start"
+          >
+            <img
+              src="../src/oil & gas img.jpg"
+              class="img-fluid mb-2 rounded"
+              style="
+                height: 200px;
+                object-fit: cover;
+                border: 4px solid #12a8e3;
+              "
+              alt="Oil and Gas"
+            />
+            <h5>
+              Oil and Gas <br />
+              <small class="text-muted">- March 9, 2020</small>
+            </h5>
+            <a href="../services/oil-and-gas.html">
+              <button class="btn btn-outline-primary mt-2 btn-sm">
+                Read more
+              </button>
+            </a>
+          </div>
 
-              <div class="col">
-                <div class="card bg-dark text-white border-0">
-                  <img
-                    src="../src/Power-Ready.jpg"
-                    class="img-fluid rounded"
-                    style="height: 280px; object-fit: cover"
-                    alt="Power"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">
-                      POWER
-                      <small class="text-muted d-block">March 9, 2020</small>
-                    </h5>
-                    <a href="../services/power.html">
-                      <button class="btn btn-outline-primary mt-2">
-                        Read more
-                      </button>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <!-- Related Post Card 5 -->
+          <div
+            class="bg-dark text-white p-3 rounded shadow"
+            style="min-width: 280px; scroll-snap-align: start"
+          >
+            <img
+              src="../src/finacing-asset.webp"
+              class="img-fluid mb-2 rounded"
+              style="
+                height: 200px;
+                object-fit: cover;
+                border: 4px solid #12a8e3;
+              "
+              alt="Asset Financing"
+            />
+            <h5>
+              Oil Field Asset Financing <br />
+              <small class="text-muted">- March 9, 2020</small>
+            </h5>
+            <a href="../services/oil-field-asset.html">
+              <button class="btn btn-outline-primary mt-2 btn-sm">
+                Read more
+              </button>
+            </a>
+          </div>
+
+          <!-- Related Post Card 6 -->
+          <div
+            class="bg-dark text-white p-3 rounded shadow"
+            style="min-width: 280px; scroll-snap-align: start"
+          >
+            <img
+              src="../src/man-powe3.jpg"
+              class="img-fluid mb-2 rounded"
+              style="
+                height: 200px;
+                object-fit: cover;
+                border: 4px solid #12a8e3;
+              "
+              alt="Man Power"
+            />
+            <h5>
+              Man Power & Training <br />
+              <small class="text-muted">- March 9, 2020</small>
+            </h5>
+            <a href="../services/man-power.html">
+              <button class="btn btn-outline-primary mt-2 btn-sm">
+                Read more
+              </button>
+            </a>
+          </div>
+
+          <!-- Related Post Card 7 -->
+          <div
+            class="bg-dark text-white p-3 rounded shadow"
+            style="min-width: 280px; scroll-snap-align: start"
+          >
+            <img
+              src="../src/Power-Ready.jpg"
+              class="img-fluid mb-2 rounded"
+              style="
+                height: 200px;
+                object-fit: cover;
+                border: 4px solid #12a8e3;
+              "
+              alt="Power"
+            />
+            <h5>
+              Power <br />
+              <small class="text-muted">- March 9, 2020</small>
+            </h5>
+            <a href="../services/power.html">
+              <button class="btn btn-outline-primary mt-2 btn-sm">
+                Read more
+              </button>
+            </a>
           </div>
         </div>
-
-        <!-- Carousel Controls -->
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#relatedCarousel"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#relatedCarousel"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
     </section>
 
