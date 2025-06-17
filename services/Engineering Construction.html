@@ -60,6 +60,7 @@
 
       /* TWEET SECTION */
       .tweet-box {
+        background: antiquewhite;
         display: flex;
         align-items: center;
         padding-left: 30px;
@@ -595,40 +596,130 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
-
     <!-- ✅ TWEET SECTION -->
     <div class="tweet-box container d-flex align-items-center mt-4 pl-2">
       <div>
         <div class="d-flex flex-column gap-3 mb-2">
-          <button class="btn btn-sm btn-outline-primary mr-2">
+          <!-- Tweet Button -->
+          <button
+            class="btn btn-sm btn-outline-primary mr-2"
+            onclick="tweetThis()"
+          >
             <i class="bi bi-twitter"></i> Tweet
           </button>
-          <button class="btn btn-sm btn-outline-success mr-2">
+
+          <!-- Share Button -->
+          <button
+            class="btn btn-sm btn-outline-success mr-2"
+            onclick="shareThis()"
+          >
             <i class="bi bi-share"></i> Share
           </button>
-          <button class="btn btn-sm btn-outline-danger">
+
+          <!-- Pin Button -->
+          <button
+            class="btn btn-sm btn-outline-danger"
+            onclick="alert('Pinned: Engineering Construction Procurement!')"
+          >
             <i class="bi bi-pin"></i> Pin
           </button>
         </div>
       </div>
-      <div class="ml-3" style="flex: 1">
+
+      <div class="ml-3 tweet-image-wrapper position-relative" style="flex: 1">
         <img
           id="tweetImage"
           src="../src/5.-Engineering-construction-main.jpg"
-          class="img-fluid  shadow"
-          style="max-height: 300px; width: 100%; object-fit: cover"
-          alt="Tweet Image"
+          class="img-fluid shadow w-100 tweet-hover-img"
+          style="max-height: 300px; object-fit: cover"
+          alt="Engineering Construction Procurement"
         />
+        <!-- Hover Icons -->
+        <div
+          class="tweet-icons-overlay d-flex justify-content-center align-items-center"
+        >
+          <a
+            href="../src/5.-Engineering-construction-main.jpg"
+            class="icon-link mr-3"
+            target="_blank"
+          >
+            <i class="bi bi-search" style="font-size: 1.5rem"></i>
+          </a>
+          <a href="#" class="icon-link">
+            <i class="bi bi-link-45deg" style="font-size: 1.5rem"></i>
+          </a>
+        </div>
       </div>
+
+      <style>
+        .tweet-image-wrapper {
+          position: relative;
+          overflow: hidden;
+        }
+
+        .tweet-hover-img {
+          transition: 0.4s ease;
+        }
+
+        .tweet-image-wrapper:hover .tweet-hover-img {
+          opacity: 0.6;
+          transform: scale(1.02);
+        }
+
+        .tweet-icons-overlay {
+          position: absolute;
+          bottom: 10px;
+          left: 0;
+          right: 0;
+          opacity: 0;
+          transition: opacity 0.4s ease;
+          color: white;
+        }
+
+        .tweet-image-wrapper:hover .tweet-icons-overlay {
+          opacity: 1;
+        }
+
+        .icon-link {
+          background: rgba(0, 0, 0, 0.6);
+          padding: 8px 12px;
+          border-radius: 6px;
+          color: white;
+          text-decoration: none;
+        }
+
+        .icon-link:hover {
+          background: rgba(0, 0, 0, 0.9);
+        }
+      </style>
     </div>
 
-    <!-- ✅ SCRIPT TO UPDATE TWEET IMAGE WHEN SLIDE CHANGES -->
     <script>
-      $('#mainCarousel').on('slide.bs.carousel', function (e) {
-        const next = $(e.relatedTarget)
-        const newImg = next.data('image')
-        $('#tweetImage').attr('src', newImg)
-      })
+      function tweetThis() {
+        const tweetText = encodeURIComponent(
+          'Engineering Construction Procurement — check out our services!'
+        )
+        const tweetUrl = encodeURIComponent(window.location.href)
+        const twitterShareUrl = `https://twitter.com/intent/tweet?text=${tweetText}&url=${tweetUrl}`
+        window.open(twitterShareUrl, '_blank')
+      }
+
+      function shareThis() {
+        if (navigator.share) {
+          navigator
+            .share({
+              title: 'Engineering Construction Procurement',
+              text: 'Explore our professional engineering and procurement solutions.',
+              url: window.location.href,
+            })
+            .then(() => console.log('Shared successfully'))
+            .catch((error) => console.error('Error sharing:', error))
+        } else {
+          alert(
+            'Web Share not supported. Please copy and share the link manually.'
+          )
+        }
+      }
     </script>
     >
     <!-- ✅ RELATED POSTS CAROUSEL -->
