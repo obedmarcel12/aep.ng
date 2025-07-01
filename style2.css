@@ -1219,7 +1219,7 @@ footer {
 
 @media (max-width: 640px) {
   body {
-    overflow-x: hidden;
+    overflow-x: hidden !important;
   }
   html {
     scroll-behavior: smooth;
