@@ -1218,7 +1218,8 @@ footer {
 /* MOBILE-VIEW */
 
 @media (max-width: 640px) {
-  body {
+  body,
+  html {
     overflow-x: hidden !important;
   }
   html {
