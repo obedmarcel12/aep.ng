@@ -1,5 +1,6 @@
 body {
-  margin: 0;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 html {
@@ -338,6 +339,9 @@ footer {
 
 /* LARGE SCREEN */
 @media (max-width: 1075px) {
+  body {
+    overflow: hidden !important;
+  }
   html {
     scroll-behavior: smooth;
   }
@@ -380,6 +384,7 @@ footer {
   }
 
   #first-navbar a {
+    color: rgb(235, 227, 217) !important;
     font-size: 2vh !important;
   }
 
@@ -396,7 +401,7 @@ footer {
     opacity: 0;
     pointer-events: none;
     height: 0;
-    overflow: hidden;
+    overflow: hidden !important;
   }
 
   #second-navbar {
@@ -409,11 +414,6 @@ footer {
 
   #second-navbar button {
     margin-left: 15rem;
-  }
-
-  #second-navbar img {
-    display: flex;
-    inline-size: 90px !important;
   }
 
   #second-navbar ul a {
