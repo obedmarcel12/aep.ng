@@ -1351,6 +1351,7 @@ footer {
   }
 
   #first-navbar a {
+    color: rgb(235, 227, 217) !important;
     font-size: 1.4vh !important;
   }
 

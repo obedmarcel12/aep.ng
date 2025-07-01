@@ -319,6 +319,7 @@ body {
     }
   
     #first-navbar a {
+      color: rgb(235, 227, 217) !important;
       font-size: 2vh !important;
     }
   
